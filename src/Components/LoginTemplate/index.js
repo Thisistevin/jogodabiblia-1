@@ -1,13 +1,11 @@
 import React from 'react'
 import { Container, Legenda } from './styles'
-import Titulo from '../Titulo'
-import Texto from '../Texto'
 import Input from '../Input'
 
-export default function FormLC() {
+export default function LoginForm() {
   return (
     <Container>
-        <Titulo />
+        <h1>Login</h1>
         <Legenda>Colabore conosco. Digite abaixo seu usuário e senha para começar a cadastrar suas perguntas.</Legenda>
         <Input />
         <Input />
