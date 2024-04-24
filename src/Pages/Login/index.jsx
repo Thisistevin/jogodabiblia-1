@@ -1,5 +1,5 @@
 import React from 'react'
-import  Container from './styles'
+import  Container, { ButtonContainer, JogoDaBibliaLable } from './styles'
 import LoginForm from 'Components/LoginTemplate';
 import Button from 'Components/Button';
 
@@ -8,9 +8,10 @@ export default function Login() {
     <Container>
         <header />
         <LoginForm />
-        <div>
+        <ButtonContainer>
           <Button />
-        </div>
+        </ButtonContainer>
+        <JogoDaBibliaLable>Jogo da Bíblia Ⓒ 2022</JogoDaBibliaLable>
     </Container>
   );
 }

@@ -12,4 +12,5 @@ export const Container = styled.div`
 export const Legenda = styled.p`
   font-size: 12px;
   margin-bottom: 24px;
+  font-family: "Lato", sans-serif;
 `;

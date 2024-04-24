@@ -19,6 +19,17 @@ export const Space = styled.div`
 `;
 
 
-export const TopBlueBanner = styled.div`
-    
+export const ButtonContainer = styled.div`
+    display: flex;
+    justify-content: end;
+    margin-right: 1.46rem;
+`;
+export const JogoDaBibliaLable = styled.div`
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 3.3rem;
+  color: #D2D2D2;
+  font-family: "Lato", sans-serif;
 `;
