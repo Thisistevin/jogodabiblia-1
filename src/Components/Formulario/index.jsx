@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { StyledForm, StyledFieldWrapper, StyledField, StyledErrorMessage } from './styles'
+import { StyledForm, StyledFieldWrapper, StyledField, StyledErrorMessage, StyledButton, StyledButtonContainer } from './styles'
 
 const validationSchema = Yup.object().shape({
     name: Yup.string().required('O nome é obrigatório'),
@@ -30,9 +30,11 @@ const validationSchema = Yup.object().shape({
             <StyledField type="password" name="password" />
             <StyledErrorMessage name="password" component="div" />
           </StyledFieldWrapper>
-          <button type="submit" disabled={isSubmitting}>
-            Enviar
-          </button>
+          <StyledButtonContainer>
+            <StyledButton type="submit" disabled={isSubmitting}>
+              {isSubmitting ? 'Enviando...' : 'Enviar'}
+            </StyledButton>
+          </StyledButtonContainer>
         </StyledForm>
       )}
     </Formik>

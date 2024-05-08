@@ -13,10 +13,6 @@ export default function Login() {
           <Legenda>Colabore conosco. Digite abaixo seu usuário e senha para começar a cadastrar suas perguntas.</Legenda>
         </Container>
         <MyForm />
-        
-        <ButtonContainer>
-          <Button />
-        </ButtonContainer>
         <JogoDaBibliaLable>Jogo da Bíblia Ⓒ 2022</JogoDaBibliaLable>
     </Container>
   );

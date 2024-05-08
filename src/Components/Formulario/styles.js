@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Form, Field, ErrorMessage } from 'formik';
 
-export default styled.button`
+export const StyledButton = styled.button`
   background-color: #547B96;
   padding: 0px 27px;
   height: 40px;
@@ -10,6 +10,14 @@ export default styled.button`
   font-size: 20px;
   color: white;
   border-radius: 5px;
+`;
+
+export const StyledButtonContainer = styled.div`
+  display: flex;
+  justify-content: end;
+  margin-right: 1.46rem;
+  margin-top: 10px;
+  width: 86vw;
 `;
 
 export const StyledForm = styled(Form)`
