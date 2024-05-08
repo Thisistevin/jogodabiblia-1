@@ -11,6 +11,12 @@ export default styled.div`
 
     }
   }
+  h1{
+    font-family: "Roboto Slab", serif;
+    padding-bottom: 15px;
+    color: #858585;
+    padding: 22px;
+  }
 `;
 
 export const Space = styled.div`
@@ -32,4 +38,10 @@ export const JogoDaBibliaLable = styled.div`
   margin-top: 3.3rem;
   color: #D2D2D2;
   font-family: "Lato", sans-serif;
+`;
+export const Legenda = styled.p`
+  font-size: 12px;
+  margin-bottom: 24px;
+  font-family: "Lato", sans-serif;
+  padding: 0px 22px 22px 22px;
 `;

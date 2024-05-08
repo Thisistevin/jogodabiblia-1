@@ -23,10 +23,6 @@ const validationSchema = Yup.object().shape({
       {({ isSubmitting }) => (
         <StyledForm>
           <StyledFieldWrapper>
-            <StyledField type="text" name="name" />
-            <StyledErrorMessage name="name" component="div" />
-          </StyledFieldWrapper>
-          <StyledFieldWrapper>
             <StyledField type="email" name="email" />
             <StyledErrorMessage name="email" component="div" />
           </StyledFieldWrapper>
@@ -35,7 +31,7 @@ const validationSchema = Yup.object().shape({
             <StyledErrorMessage name="password" component="div" />
           </StyledFieldWrapper>
           <button type="submit" disabled={isSubmitting}>
-            Submit
+            Enviar
           </button>
         </StyledForm>
       )}
