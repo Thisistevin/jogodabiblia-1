@@ -23,11 +23,11 @@ const validationSchema = Yup.object().shape({
       {({ isSubmitting }) => (
         <StyledForm>
           <StyledFieldWrapper>
-            <StyledField type="email" name="email" />
+            <StyledField type="email" name="email" placeholder="username ou email" />
             <StyledErrorMessage name="email" component="div" />
           </StyledFieldWrapper>
           <StyledFieldWrapper>
-            <StyledField type="password" name="password" />
+            <StyledField type="password" name="password" placeholder="senha" />
             <StyledErrorMessage name="password" component="div" />
           </StyledFieldWrapper>
           <StyledButtonContainer>

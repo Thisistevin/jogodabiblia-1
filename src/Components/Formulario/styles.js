@@ -32,12 +32,23 @@ export const StyledFieldWrapper = styled.div`
 
 export const StyledField = styled(Field)`
   /* Estilos do campo */
-  width: 274px;
-  height: 56px;
+  width: 254px;
+  height: 36px;
+  padding: 10px;
   border-radius: 5px;
   border: solid 1px #727376;
   background-color: #F4F5F6;
   margin-bottom: 8px;
+  color: #547B96;
+  font-size: 24px;
+  &:focus{
+    outline-color: #547B96;
+    transition: 1s;
+  }
+  &::placeholder{
+    font-size: 20px;
+    color: #9E9D97;
+  }
 `;
 
 export const StyledErrorMessage = styled(ErrorMessage)`
