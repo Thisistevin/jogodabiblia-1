@@ -1,3 +1,4 @@
+// styles.js
 import styled from 'styled-components';
 import { Form, Field, ErrorMessage } from 'formik';
 
@@ -28,6 +29,7 @@ export const StyledForm = styled(Form)`
 export const StyledFieldWrapper = styled.div`
   color: black;
   /* Estilos do wrapper do campo */
+  margin-bottom: 0px;
 `;
 
 export const StyledField = styled(Field)`
@@ -41,18 +43,23 @@ export const StyledField = styled(Field)`
   margin-bottom: 8px;
   color: #547B96;
   font-size: 24px;
-  &:focus{
+  &:focus {
     outline-color: #547B96;
     transition: 1s;
   }
-  &::placeholder{
+  &::placeholder {
     font-size: 20px;
     color: #9E9D97;
   }
+
+  /* Estilo condicional para borda vermelha em caso de erro */
+  ${({ error }) => error && `
+    outline: #F16246;
+  `}
 `;
 
 export const StyledErrorMessage = styled(ErrorMessage)`
-  color: black;
-  /* Estilos da mensagem de erro */
+  color: red;
+  font-size: 10px;
+  margin-bottom: 5px;
 `;
-
